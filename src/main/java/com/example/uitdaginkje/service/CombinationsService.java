@@ -8,6 +8,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Service responsible for generating combinations of words from a given list of strings.
+ * It identifies all possible combinations of words that result in a word of a specified length.
+ */
 @Service
 public class CombinationsService {
 
