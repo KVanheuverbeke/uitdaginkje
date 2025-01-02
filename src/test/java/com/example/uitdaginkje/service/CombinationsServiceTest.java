@@ -16,7 +16,7 @@ class CombinationsServiceTest {
 
     @Test
     void getCombinations() {
-        List<String> input = List.of("foo", "bar", "fo", "obar", "foobar");
+        List<String> input = List.of("foo", "bar", "fo", "obar", "foobar", "foo", "foobar");
         List<String> result = combinationsService.getCombinations(input, 6);
         System.err.println(result);
         assertTrue(result.contains("foo+bar=foobar"));
