@@ -34,15 +34,10 @@ A good extra to do is the create an API that can be called with a request contai
 the output as described above.
 Or to store the result in a database (H2 for instance) to show that you can talk to a database.
 
-For instance a call with curl, or a postman collection included in you project might help us. We are your customers and
-we are lazy ;-).
 
-> curl --request POST 'http://localhost:8080/api/file' --data '@input.txt' --header "Content-Type: text/plain" >>
-> output.txt
+to test the application, run it in your IDE and go to
+http://localhost:8080/swagger-ui/index.htm
 
-Spend as many time as you want, but please communicate the amount of time you spent on the project.
-The idea is that we just can look at some code by your hand... most people spent 1 to 2 hours tops on this exercise.
+or use postman with uitdaginkje.postman_collection.json
+(and select the file on the correct location)
 
-If you have any questions feel free to contact us!
-
-Good luck!
