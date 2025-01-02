@@ -1,9 +1,12 @@
 package com.example.uitdaginkje.service;
 
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class CombinationsService {
 
     public List<String> getCombinations(List<String> input, int combinationLength) {

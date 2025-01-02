@@ -21,6 +21,6 @@ class CombinationsServiceTest {
         System.err.println(result);
         assertTrue(result.contains("foo+bar=foobar"));
         assertTrue(result.contains("fo+obar=foobar"));
-        assertTrue(result.size() == 2);
+        assertEquals(2, result.size());
     }
 }
