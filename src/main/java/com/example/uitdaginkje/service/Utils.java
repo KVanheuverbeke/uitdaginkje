@@ -7,8 +7,12 @@ import java.util.List;
 
 public class Utils {
 
+    private Utils() {
+    }
+
     /**
      * change String to Output to store it in database
+     *
      * @param input List of strings
      * @return List of output to put in DB
      */

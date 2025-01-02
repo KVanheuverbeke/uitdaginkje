@@ -3,17 +3,17 @@ package com.example.uitdaginkje.controller;
 import com.example.uitdaginkje.dao.OutputRepository;
 import com.example.uitdaginkje.service.CombinationsService;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
-
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockMultipartFile;
 
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.*;
 
 class ApiControllerTest {
 
@@ -65,4 +65,5 @@ class ApiControllerTest {
         assertEquals("File is empty", exception.getMessage());
         verifyNoInteractions(outputRepository);
     }
+
 }

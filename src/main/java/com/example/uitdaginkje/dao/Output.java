@@ -3,7 +3,7 @@ package com.example.uitdaginkje.dao;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="output")
+@Table(name = "output")
 public class Output {
 
     @Id
@@ -11,10 +11,10 @@ public class Output {
     private Long id;
 
     @Column(name = "output")
-    private String output;
+    private String outputValue;
 
-    public Output(String output) {
-        this.output = output;
+    public Output(String outputValue) {
+        this.outputValue = outputValue;
     }
 
     public Long getId() {
@@ -25,11 +25,11 @@ public class Output {
         this.id = id;
     }
 
-    public String getOutput() {
-        return output;
+    public String getOutputValue() {
+        return outputValue;
     }
 
-    public void setOutput(String output) {
-        this.output = output;
+    public void setOutputValue(String outputValue) {
+        this.outputValue = outputValue;
     }
 }

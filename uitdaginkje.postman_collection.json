@@ -1,29 +1,29 @@
 {
-	"info": {
-		"_postman_id": "d67580b4-0725-4dd2-8b24-abd2b3781c3d",
-		"name": "uitdaginkje",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "25271004"
-	},
-	"item": [
-		{
-			"name": "api/file",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "file",
-							"type": "file",
-							"src": "/C:/java/uitdaginkje/input.txt"
-						}
-					]
-				},
-				"url": "localhost:8080/api/file"
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "d67580b4-0725-4dd2-8b24-abd2b3781c3d",
+    "name": "uitdaginkje",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "25271004"
+  },
+  "item": [
+    {
+      "name": "api/file",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/java/uitdaginkje/input.txt"
+            }
+          ]
+        },
+        "url": "localhost:8080/api/file"
+      },
+      "response": []
+    }
+  ]
 }

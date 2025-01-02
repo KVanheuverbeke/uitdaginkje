@@ -8,7 +8,11 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 public class FileReaderService {
-    public static List<String> readFile(MultipartFile file) {
+
+    private FileReaderService() {
+    }
+
+    public static List<String> readFile(MultipartFile file)  {
         try {
             return new BufferedReader(new InputStreamReader(file.getInputStream())).lines().map(String::trim).filter(line -> !line.isEmpty()).toList();
         } catch (IOException e) {
